@@ -513,6 +513,9 @@ template {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  .search__input {
+    width: 340px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -548,6 +551,12 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
   }
 }
 /*# sourceMappingURL=style.css.map */
