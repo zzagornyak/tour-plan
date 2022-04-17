@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/main.js"></script> -->
 </head>
+
 <body>
     <header class="navbar">
         <div class="container">
@@ -16,16 +23,14 @@
                     <img src="img/logo-horizontal.svg" alt="Logo: Best Tour Plan" class="logo__image">
                 </a>
                 <form action="#" class="search navbar__search">
-                    <input type="text" 
-                    class="search__input"
-                    placeholder="Search Location">
+                    <input type="text" class="search__input" placeholder="Search Location">
                     <button class="search__button">
                         <img class="search__image" src="img/Find-Button.svg" alt="Find button">
                     </button>
                 </form>
-                
+
                 <a href="#" class="user navbar__user">
-                    <img class="user__avatar" src="img/user-avatar.jpg" alt="Avatar: Natan" >
+                    <img class="user__avatar" src="img/user-avatar.jpg" alt="Avatar: Natan">
                     <span class="user__name">Nathan</span>
                 </a>
                 <button class="menu-button navbar-top__menu-button">
@@ -35,7 +40,7 @@
                 </button>
             </div>
             <!-- /.navbar-top -->
-        <!-- /.container -->    
+            <!-- /.container -->
         </div>
         <div class="navbar-bottom">
             <div class="container">
@@ -100,7 +105,8 @@
                         <h1 class="info__hotel-name">GRAND HILTON HOTEL</h1>
                         <span class="info__offer">Flash Offer</span>
                     </div>
-                    <p class="info__description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
+                    <p class="info__description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
+                    </p>
                 </div>
                 <!-- /.hotel-info__text -->
                 <div class="rating hotel-info__rating">
@@ -109,8 +115,39 @@
                 </div>
                 <!-- /.hotel-info__right -->
             </div>
+            <!-- /.hotel-info-->
+            <div class="hotel-grid">
+                <div class="slider">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="img/slide.jpg" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide.jpg" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slide.jpg" alt="slide">
+                            </div>
+                        </div>
+
+                        <!-- If we need navigation buttons -->
+                        <button class="slider-button slider-button__prev"></button>
+                        <button class="slider-button slider-button__next"></button>
+                    </div>
+                    <!-- /.swiper container -->
+                </div>
+                <!-- /.slider -->
+            </div>
+            <!-- /.hotel-grid -->
         </div>
         <!-- /.container -->
     </section>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
