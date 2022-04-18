@@ -9,10 +9,16 @@
             display: flex
             flex-direction: column
             align-items: center
+    &-grid
+        display: flex
+        justify-content: space-between
+
+
 .hotel-wrapper
     display: flex
     align-items: center
     flex-wrap: wrap
+
 .info
     &__stars
         flex-basis: 100%
@@ -39,6 +45,7 @@
         line-height: 15px
         margin-top: 0
         margin-bottom: 20px
+
 .rating
     width: 65px
     height: 45px
@@ -92,3 +99,93 @@
         &__prev
             left: 18px
             background-image: url(../img/arrow-prev.svg)
+.booking
+    font-family: 'Nunito'
+    color: $light
+    background-color: $dark
+    border-radius: 8px
+    width: 350px
+    min-height: 210px
+    padding: 28px
+
+    &__info
+        display: flex
+        justify-content: space-between
+    &__price
+        display: flex
+        flex-direction: column
+    &__start
+        font-style: normal
+        font-weight: 400
+        font-size: 10px
+        line-height: 14px
+    &__pricetag
+        font-style: normal
+        font-weight: 800
+        font-size: 24px
+        line-height: 33px
+    &__per-room
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+    &__person-room
+        margin-top: 4px
+    &__description
+        min-width: 81px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 8px
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+    &__icon
+        width: 14px
+        height: 14px
+    &__text
+    &__call-center
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__heading
+        margin-top: 9px
+        font-style: normal
+        font-weight: 600
+        font-size: 18px
+        line-height: 25px
+        margin-bottom: 17px
+
+    &__number
+        min-width: 81px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        text-decoration: none
+        color: $light
+        font-weight: 600
+        font-size: 18px
+        line-height: 25px
+    &__icon
+    &__num
+    &__button
+        width: 100%
+        min-height: 45px
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+        background-color: $button-color
+        border: none
+        border-radius: 4px
+        color: $light
+        cursor: pointer
+.map
+    border-radius: 4px
+.hotel-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    
+
