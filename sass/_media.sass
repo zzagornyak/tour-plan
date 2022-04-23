@@ -1,15 +1,16 @@
 @media (max-width: 1200px)
     .container
         max-width: 960px
-    .slider
-        width: 590px
-    .swiper
-        &-slide
+    .hotel
+        &-slider
+            width: 590px
             &__image
                 width: 100%
                 height: 100%
                 object-fit: cover
-
+    .card
+        width: 230px
+        height: 230px
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -40,12 +41,30 @@
             width: 100%
         &__slider
             margin-bottom: 35px
-    .slider
-        width: 100%
+        &-slider
+           width: 700px 
     .map
         width: 340px
     .booking
         width: 340px
+    .reviews
+        &-tittle
+            font-size: 30px
+            line-height: 38px
+        &-slider
+            &__item
+                max-width: 579px
+                &::before
+                    display: none
+                &::after
+                    display: none
+    .activities
+        &-wrapper
+            flex-wrap: wrap
+    .card
+        width: 340px
+        height: 255px
+        margin-bottom: 20px
 @media (max-width: 768px)
     .container, .newsletter-wrapper
         max-width: 576px
@@ -101,21 +120,49 @@
             margin-right: 15px
 
     .subscribe
+
         &__input
             padding-left: 10px
+    .reviews
+        &-slider
+            &__item
+                padding: 0 30px 30px
+            &__button
+                top: 32px
+                &--prev
+                    left: 50%
+                    transform: translate(-50%, 0)
+                    margin-left: -65px
+                &--next
+                    right: 50%
+                    transform: translate(50%, 0)
+                    margin-right: -65px
+    .activities
+        padding-top: 40px
+        padding-bottom: 60px
+    .card
+        width: 49%
+
 @media (max-width: 576px)
     .logo
         width: 99px
-    .slider
-        height: 250px
+    .hotel
+        &-slider
+            height: 250px
     .newsletter
         &-wrapper
             flex-direction: column
             align-items: flex-start
-        
+    .reviews
+        &-tittle
+            font-size: 18px
+            line-height: 23px
+    .card
+        width: 100%
+
 @media (max-width: 410px)
     .subscribe
-            max-width: 280px
+        max-width: 280px
 @media (max-width: 320px)
     .container
         max-width: 280px
@@ -134,4 +181,19 @@
             font-size: 30px
             line-height: 38px
     .subscribe
-            max-width: 270px
+        max-width: 270px
+.reviews
+    &-tittle
+    &-slider
+    &__item
+    &::before
+    &::after
+    &__profile
+    &__avatar
+    &__username
+    &__date
+    &__stars
+    &__text
+    &__button
+    &--next
+    &--prev
