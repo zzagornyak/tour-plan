@@ -16,7 +16,7 @@
     </head>
 
     <body>
-        <header class="navbar">
+        <header class="navbar navbar__mobile--fixed">
             <div class="container">
                 <div class="navbar-top">
                     <a href="#" class="logo">
@@ -26,7 +26,10 @@
                             class="logo__image"
                         />
                     </a>
-                    <form action="#" class="search navbar__search">
+                    <form
+                        action="#"
+                        class="search navbar__search navbar__search--mobile--hidden"
+                    >
                         <input
                             type="text"
                             class="search__input"
@@ -41,7 +44,10 @@
                         </button>
                     </form>
 
-                    <a href="#" class="user navbar__user">
+                    <a
+                        href="#"
+                        class="user navbar__user navbar__user--mobile--hidden"
+                    >
                         <img
                             class="user__avatar"
                             src="img/user-avatar.jpg"
@@ -61,6 +67,38 @@
             <div class="navbar-bottom">
                 <div class="container">
                     <ul class="navbar-menu">
+                        <li class="navbar-menu__item">
+                            <a
+                                href="#"
+                                class="user navbar__user navbar__user--mobile--visible"
+                            >
+                                <img
+                                    class="user__avatar"
+                                    src="img/user-avatar.jpg"
+                                    alt="Avatar: Natan"
+                                />
+                                <span class="user__name user__name--mobile">Nathan</span>
+                            </a>
+                        </li>
+                        <li class="navbar-menu__item">
+                            <form
+                                action="#"
+                                class="search navbar__search navbar__search--mobile--visible"
+                            >
+                                <input
+                                    type="text"
+                                    class="search__input"
+                                    placeholder="Search Location"
+                                />
+                                <button class="search__button">
+                                    <img
+                                        class="search__image"
+                                        src="img/Find-Button.svg"
+                                        alt="Find button"
+                                    />
+                                </button>
+                            </form>
+                        </li>
                         <li class="navbar-menu__item">
                             <a href="#" class="navbar-menu__link">ALL DEALS</a>
                         </li>
@@ -607,9 +645,7 @@
 
                     <!-- .footer-list -->
                     <div class="footer__list footer__information">
-                        <h3 class="footer__tittle">
-                            ADDITIONAL INFORMATION
-                        </h3>
+                        <h3 class="footer__tittle">ADDITIONAL INFORMATION</h3>
                         <ul class="footer__ul">
                             <li class="footer__item">
                                 <a href="#" class="footer__link">About Us</a>
@@ -641,23 +677,16 @@
                     </div>
                     <!-- .footer-list -->
                     <div class="footer__social-network">
-                        <h3 class="footer__tittle footer__tittle--inline">Social Network</h3>
+                        <h3 class="footer__tittle footer__tittle--inline">
+                            Social Network
+                        </h3>
                         <div class="footer__social-links">
                             <a href="#" class="footer__link"
-                                ><img
-                                    src="img/fb.svg"
-                                    alt="Facebook"
-                                     /></a
+                                ><img src="img/fb.svg" alt="Facebook" /></a
                             ><a href="#" class="footer__link"
-                                ><img
-                                    src="img/yt.svg"
-                                    alt="Youtube"
-                                     /></a
+                                ><img src="img/yt.svg" alt="Youtube" /></a
                             ><a href="#" class="footer__link"
-                                ><img
-                                    src="img/inst.svg"
-                                    alt="Instagram"
-                                    
+                                ><img src="img/inst.svg" alt="Instagram"
                             /></a>
                         </div>
                         <!-- social-network -->
@@ -686,7 +715,7 @@
                     <!-- .footer-list -->
                     <div class="footer__contact-details">
                         <h3 class="footer__tittle">Contact Details</h3>
-                        <p class="footer__text ">
+                        <p class="footer__text">
                             Feel free to contact us by phone, email or by our
                             contact form
                         </p>
@@ -722,7 +751,6 @@
                                         src="img/email.svg"
                                         alt="icon:email"
                                         class="footer__icon"
-                                    
                                     />
                                 </div>
                                 cherly.lawson@example.com
@@ -733,10 +761,25 @@
                     <div class="footer__contact-form">
                         <h3 class="footer__tittle">Send us a message</h3>
                         <form action="" class="footer__form">
-                            <input type="text" class="input footer__input" placeholder="Your Full Name*">
-                            <input type="text" class="input footer__input" placeholder="Phone Number*">
-                            <textarea cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
-                            <button class="button footer__button" type="submit">Send</button>
+                            <input
+                                type="text"
+                                class="input footer__input"
+                                placeholder="Your Full Name*"
+                            />
+                            <input
+                                type="text"
+                                class="input footer__input"
+                                placeholder="Phone Number*"
+                            />
+                            <textarea
+                                cols="30"
+                                rows="10"
+                                class="footer__message"
+                                placeholder="Message"
+                            ></textarea>
+                            <button class="button footer__button" type="submit">
+                                Send
+                            </button>
                             <span class="footer__info">* Required Fields</span>
                         </form>
                     </div>
